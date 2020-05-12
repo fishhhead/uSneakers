@@ -1,0 +1,7 @@
+2020-05-12
+Added
+*SplashDisplay - Added for loading screen
+
+Changed
+
+Fixed

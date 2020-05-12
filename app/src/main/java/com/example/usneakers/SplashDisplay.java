@@ -12,7 +12,7 @@ import android.view.WindowManager;
 public class SplashDisplay extends AppCompatActivity {
 
     //Define the duration of waiting time for 3s
-    private final int SPLASH_DISPLAY_LENGTH = 3000;
+    private final int SPLASH_DISPLAY_LENGTH = 4000;
 
     //when activity is firstly created
     @Override

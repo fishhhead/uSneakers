@@ -2,4 +2,8 @@
     <string name="app_name">U Sneakers</string>
     <string name="LoadingTitle">U Sneakers</string>
     <string name="loadingscreenimage">LoadingScreenImage</string>
+    <string name="NavHome">Home</string>
+    <string name="NavCatalogues">Catalogues</string>
+    <string name="NavVerify">Verification</string>
+    <string name="NavAccount">My Account</string>
 </resources>
