@@ -2,6 +2,16 @@
 Added
 *SplashDisplay - Added for loading screen
 
+*Navigation Bar - four fragments
+
+Changed
+
+Fixed
+
+2020-05-18
+Added
+*Login and register activities
+
 Changed
 
 Fixed
