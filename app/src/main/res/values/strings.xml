@@ -28,4 +28,11 @@
     <string name="error_valid_email_password">Wrong Email or Password</string>
     <string name="success_message">Registration Successful</string>
 
+    <!--Facebook Login strings-->
+    <string name="facebook_app_id">527891928090750</string>
+    <string name="fb_login_protocol_scheme">fb527891928090750</string>
+
+    <!--Heading text-->
+    <string name="Heading">Please Login or Register to explore more features!</string>
+
 </resources>

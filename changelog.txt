@@ -15,3 +15,15 @@ Added
 Changed
 
 Fixed
+
+2020-05-19
+Added
+*Login option - Facebook login
+*Logo
+*UI Design
+
+Changed
+*Removed user list activity
+
+Fixed
+*After Login, lead to Home page

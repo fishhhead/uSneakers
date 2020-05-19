@@ -14,12 +14,31 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!--Heading (Titles)-->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/Heading"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+        </com.google.android.material.textview.MaterialTextView>
+
+        <!--Logo-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo">
+        </androidx.appcompat.widget.AppCompatImageView>
+
         <!--Email input-->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/lay_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="20dp">
 
             <EditText
                 android:id="@+id/et_Email"
@@ -36,7 +55,7 @@
             android:id="@+id/lay_Pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="20dp">
 
             <EditText
                 android:id="@+id/et_Pass"
@@ -66,6 +85,16 @@
             android:gravity="center"
             android:text="@string/text_not_member">
         </androidx.appcompat.widget.AppCompatTextView>
+
+        <!--Facebook login button-->
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

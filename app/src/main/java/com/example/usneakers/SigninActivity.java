@@ -4,18 +4,31 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.widget.NestedScrollView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
+
+import java.util.Arrays;
 
 public class SigninActivity extends AppCompatActivity implements View.OnClickListener {
     private final SigninActivity activity = SigninActivity.this;
     private NestedScrollView nestedScrollView;
+
+    private LoginButton loginButton;
+    private CallbackManager callbackManager;
 
     private TextInputLayout lay_Email;
     private TextInputLayout lay_Pass;
@@ -30,6 +43,8 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
     private DatabaseHelper databaseHelper;
     private User user;
 
+    private static final String EMAIL = "email";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +53,39 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         initview();;
         initListener();
         initObjects();
+        FacebookLogin();
+    }
+
+    private void FacebookLogin() {
+
+        loginButton = findViewById(R.id.login_button);
+        loginButton.setReadPermissions(Arrays.asList(EMAIL));
+
+        callbackManager = CallbackManager.Factory.create();
+
+        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                Intent intent = new Intent(activity, MainActivity.class);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onCancel() {
+
+            }
+
+            @Override
+            public void onError(FacebookException error) {
+
+            }
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        callbackManager.onActivityResult(requestCode, resultCode, data);
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     private void initview() {
