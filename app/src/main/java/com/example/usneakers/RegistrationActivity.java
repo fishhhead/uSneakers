@@ -5,12 +5,15 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.widget.NestedScrollView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
+
+import net.yslibrary.android.keyboardvisibilityevent.util.UIUtil;
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -107,8 +110,11 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
             user.setPass(et_Pass.getText().toString().trim());
             databaseHelper.addUser(user);
 
+            UIUtil.hideKeyboard(this);
             Snackbar.make(nestedScrollView, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
             emptyInputEdittext();
+            Intent intent = new Intent(this, SigninActivity.class);
+            startActivity(intent);
         } else {
             Snackbar.make(nestedScrollView, getString(R.string.error_email_exists), Snackbar.LENGTH_LONG).show();
         }
