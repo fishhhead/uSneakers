@@ -27,3 +27,19 @@ Changed
 
 Fixed
 *After Login, lead to Home page
+
+2020-05-22
+Added
+*Home Fragment UI - tablayout and view pager
+
+Changed
+
+Fixed
+
+2020-05-23
+Added
+
+Changed
+
+Fixed
+*Implemented Tablayout and viewpager2
