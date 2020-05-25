@@ -1,4 +1,4 @@
-package com.example.usneakers;
+package com.example.usneakers.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.usneakers.R;
 import com.google.android.material.tabs.TabLayout;
 
 

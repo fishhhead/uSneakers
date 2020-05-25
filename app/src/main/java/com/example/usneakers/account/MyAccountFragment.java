@@ -1,4 +1,4 @@
-package com.example.usneakers;
+package com.example.usneakers.account;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,10 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class VerificationFragment extends Fragment {
+import com.example.usneakers.R;
+
+public class MyAccountFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_verification, container, false);
+        return inflater.inflate(R.layout.fragment_account, container, false);
     }
 }

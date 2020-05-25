@@ -1,13 +1,16 @@
-package com.example.usneakers;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
+package com.example.usneakers.home;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
+import com.example.usneakers.account.MyAccountFragment;
+import com.example.usneakers.R;
+import com.example.usneakers.verification.VerificationFragment;
+import com.example.usneakers.catalogue.CatalogueFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {

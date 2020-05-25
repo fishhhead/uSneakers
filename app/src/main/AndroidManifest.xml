@@ -12,14 +12,14 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SigninActivity" />
         <activity android:name=".RegistrationActivity" />
-        <activity android:name=".SplashDisplay">
+        <activity android:name=".loadingscreen.SplashDisplay">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".home.MainActivity" />
 
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>

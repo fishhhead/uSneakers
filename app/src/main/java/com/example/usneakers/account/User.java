@@ -1,4 +1,4 @@
-package com.example.usneakers;
+package com.example.usneakers.account;
 
 public class User {
     private int id;

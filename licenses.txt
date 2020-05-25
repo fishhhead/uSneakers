@@ -10,3 +10,17 @@ Author: Yufeng Zhu
 
 Source Website:https://www.freelogodesign.org/preview?lang=en&autodownload=true&logo=39343608-0a91-4dfa-8518-5e650a91b9dd
 
+/*
+ *catalogue pictures
+ */
+
+ Item name: yeezy.png
+
+ License Type: The image is licensed under CC BY-NC-ND 2.0
+
+Author: Vision Invisible, Uploaded on August 18, 2015
+
+Source: https://www.flickr.com/photos/visioninvisible/20664975536
+
+
+
