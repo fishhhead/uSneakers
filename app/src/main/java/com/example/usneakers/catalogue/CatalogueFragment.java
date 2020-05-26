@@ -33,7 +33,6 @@ public class CatalogueFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_catalogue, container, false);
 
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
-        mProgressBarLoading = (ProgressBar)view.findViewById(R.id.progressBarLoading);
 
         final LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
