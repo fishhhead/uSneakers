@@ -41,4 +41,17 @@
     <string name="Intro">Intro</string>
     <string name="Gallery">Gallery</string>
     <string name="title_activity_maps">Map</string>
+
+    <!--Home page texts-->
+    <string name="home_top">Welcome to U Sneaker</string>
+    <string name="home_bottom_left">U Sneaker offers range of coupon code for popular sneaker with different brand. Browse our catalogue and generate a coupon for the sneaker you like for 20% off. You can copy the code and redeem them while you purchasing sneaker in their official brand website.</string>
+    <string name="home_bottom_right">We offer a service to validate and verify whether your sneaker is fake or not. First time verification is free, please jump to Verification page if you would like to know more.</string>
+    <string name="home_swipe">Swipe to view our gallery</string>
+
+    <!--Verification page text-->
+    <string name="verify_text">You can bring one pair of sneakers to our Verification Centre, and one of our specialist will verify them. The first time is free, otherwise the service will be charged for $20.</string>
+    <string name="verify_contacts">Contact Us: </string>
+    <string name="verify_address">221 Burwood Hwy, Burwood VIC 3125</string>
+    <string name="verify_phone">(03) 9244 6100</string>
+    <string name="verify_googlemap">(Or you can find us on Google Map)</string>
 </resources>

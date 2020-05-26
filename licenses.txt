@@ -14,13 +14,54 @@ Source Website:https://www.freelogodesign.org/preview?lang=en&autodownload=true&
  *catalogue pictures
  */
 
- Item name: yeezy.png
+Item name: yeezy.png
 
- License Type: The image is licensed under CC BY-NC-ND 2.0
+License Type: The image is licensed under CC BY-NC-ND 2.0
 
 Author: Vision Invisible, Uploaded on August 18, 2015
 
 Source: https://www.flickr.com/photos/visioninvisible/20664975536
 
+/*
+ *home intro pic
+ */
 
+Item name: home_left1.png
+
+License Type: The image is licensed under CC0
+
+Author: Florian Olivo on Unsplash
+
+Source: https://unsplash.com/photos/5d4EhqeV0Og
+
+
+/*
+ *home verification icon
+ */
+
+
+Item name: home_right.png
+
+License Type: The image is licensed under Creative Commons 4.0
+
+Author: PNG Repo
+
+Source: https://www.pngrepo.com/svg/68401/verification-symbol
+
+
+/*
+ *Gallery gifs
+ */
+ Item name: gallery gifs
+
+ License Type: CC4.0 NC BY
+
+ Author: GIPHY (CRPTC CHILD)
+               (Galeries Lafayette)
+               (Vasya Kolotusha)
+
+ Source: https://gph.is/1PQv0yN
+         https://gph.is/g/4Lg8dmd
+         https://gph.is/1zEeHGW
+         https://gph.is/2ReQOvi
 

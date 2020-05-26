@@ -43,3 +43,21 @@ Changed
 
 Fixed
 *Implemented Tablayout and viewpager2
+
+2020-05-25
+Added
+*Catalogue recyclerview and cardview
+*Verification page - Google Map implementation
+
+Changed
+
+Fixed
+
+2020-05-26
+Added
+*UI resources - pictures, texts and gifs
+
+Changed
+
+Fixed
+*Google Map fragment
