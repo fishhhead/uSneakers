@@ -8,13 +8,22 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.usneakers.R;
 
-public class VerificationFragment extends Fragment {
+public class VerificationFragment extends Fragment  {
+    View view;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_verification, container, false);
+
+        view =  inflater.inflate(R.layout.fragment_verification, container, false);
+
+        googleMapFragment supportMapFragment = new googleMapFragment();
+        FragmentTransaction fm = getChildFragmentManager().beginTransaction();
+        fm.replace(R.id.map_fragment, supportMapFragment).commit();
+
+        return view;
     }
 }
