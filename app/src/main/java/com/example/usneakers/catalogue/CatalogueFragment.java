@@ -5,13 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,9 +21,6 @@ import java.util.ArrayList;
 
 public class CatalogueFragment extends Fragment {
 
-    private TextView mTextViewEmpty;
-    private ProgressBar mProgressBarLoading;
-    private ImageView mImageViewEmpty;
     private RecyclerView mRecyclerView;
     private ListAdapter mListadapter;
 
@@ -98,7 +95,19 @@ public class CatalogueFragment extends Fragment {
                 @Override
                 public void onClick(View v)
                 {
-                    Toast.makeText(getActivity(), "Item " + position + " is clicked.", Toast.LENGTH_SHORT).show();
+                    Fragment fragment = new catalogueCouponFragment();
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("bundleKeyImage", catalogueData.imgArray[position]);
+                    bundle.putString("bundleKeyItemName", catalogueData.textArray[position]);
+                    fragment.setArguments(bundle);
+
+                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.fragment_container, fragment);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
+
+
                 }
             });
         }
