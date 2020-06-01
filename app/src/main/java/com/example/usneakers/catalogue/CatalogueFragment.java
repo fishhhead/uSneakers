@@ -36,11 +36,10 @@ public class CatalogueFragment extends Fragment {
         mRecyclerView.setLayoutManager(layoutManager);
 
         ArrayList data = new ArrayList<catalogueItems>();
-        for (int i = 0; i < catalogueData.id.length; i++){
+        for (int i = 0; i < catalogueData.textArray.length; i++){
             data.add(
                     new catalogueItems
                             (
-                                    catalogueData.id[i],
                                     catalogueData.imgArray[i],
                                     catalogueData.textArray[i]
                             ));
@@ -106,8 +105,6 @@ public class CatalogueFragment extends Fragment {
                     fragmentTransaction.replace(R.id.fragment_container, fragment);
                     fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commit();
-
-
                 }
             });
         }

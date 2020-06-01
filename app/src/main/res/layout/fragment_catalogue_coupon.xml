@@ -1,25 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    android:id="@+id/ccf"
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".catalogue.catalogueCouponFragment">
+    tools:context=".catalogue.catalogueCouponFragment"
+    android:background="@color/whiteText">
+
+    <ImageButton
+        android:id="@+id/Back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@color/whiteText"
+        android:src="@drawable/ic_arrow_back_black_24dp">
+    </ImageButton>
 
     <ImageView
         android:id="@+id/SneakerPic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
     </ImageView>
 
     <TextView
         android:id="@+id/SneakerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
-
+        android:layout_below="@+id/SneakerPic"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold">
     </TextView>
 
+    <Button
+        android:id="@+id/couponButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="85dp"
+        android:layout_below="@+id/SneakerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/coupon_button"
+        android:background="@color/buttonColor"
+        android:textColor="@color/whiteText">
+    </Button>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/couponButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+    </TextView>
+
+</RelativeLayout>

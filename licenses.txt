@@ -65,3 +65,28 @@ Source: https://www.pngrepo.com/svg/68401/verification-symbol
          https://gph.is/1zEeHGW
          https://gph.is/2ReQOvi
 
+
+/*
+ *Catalogue Sneakers' Photos
+ */
+
+ Item name:cat_adidasnmd.png
+           cat_aj.png
+           cat_offwhite.png
+           cat_nike.png
+
+ License Type: Attribution-NonCommercial-NoDerivs 2.0 Generic (CC BY-NC-ND 2.0)
+               Attribution 2.0 Generic (CC BY 2.0)
+
+ Author: Estevan Cruz
+         Kevin Wu
+         EU Kicks
+         designmilk
+         Vision Invisible
+
+ Source: https://www.flickr.com/photos/88623248@N07/28156021673/
+         https://www.flickr.com/photos/buyeasyshop/5612709646
+         https://www.flickr.com/photos/138043430@N06/40906775485/in/photolist-25jMVbv-TSkgnC-2eMik4m-2ajdaG8-GMm98M-GnM3dv-SHPypN-KMzYCB-2eoTbDh-GJKKwF-HAHrTF-2af17ZJ-2af184m-2666DR1-24HmxXN-2a7F9wU-24fSKXn-25eqEFR-QPapnm-DxuwNy-27WhG6K-2af17TG-NbQBu1-2dyyreW-NbQwAd-EfA274-SaPyt3-GJKN8c-DxuBTJ-rLSpU5-2ajdape-Go4Juk-21WZwZd-DxuEod-DqLmda-x49iXc-EC3WFV-243ghuq-GMZdH6-2af17HS-NbQBxh-NbQB41-28WdnDD-NbQBr5-21FmPUk-28WdnP8-2af11D7-2dBHV82-246bpPg-2af11L1
+         https://www.flickr.com/photos/designmilk/19361792812/in/photolist-vuWfs1-L5o2wZ-ypcUHP-s7HE8S-t7rxDR-GZ4uxB-FyreL9-Dt1jhy-UCezxL-rGFZPw-tZDxAn-CjPy7W-tNFe3D-2adWeXt-2avSDAW-NjDh99-t4MzQg-sMcHrs-t4xuBW-t4Lk5c-sMcuBu-UpVXH5-24s4wDk-FqUF9C-22Mq2ws-2avSAXQ-H3gJJZ-4G6GkB-2avSCQs-AD9FrX-tw5oVJ-4G15jT-t4ueQh-GvovAT-25KC8eq-2adWgTT-syF4ux-2avSCy5-G8XSnz-243pPJ5-24hjnvq-JSeoL3-z8USDC-Mp4Rk5-Ho1ZSR-Q7LNfE-t2p7Pu-t4LD1X-rbRzqn-4G15wg
+         https://www.flickr.com/photos/visioninvisible/21488641704/in/photolist-yJSUwu-FyreL9-FqUF9C-GvovAT-JKjtJ7-XjeojD-266HSCE-243pPJ5-26awkbD-266HzmW-KbekDz-26awvje-FsmqDw-FLAMYv-EX2fv1-EXda1R-FQaRsL-FQaQZw-FJhYFb-rZGNvd-s55bKo-tZAQ3u-tZXEAz-rN3chB-r6fTuu-J2LfYf-JePrZk-JePpDP-266HGUG-24NyT6K-GQQgXf-266JaVA-266J6H7-RJrxYE-T1YPbD-BkR9Np-r6fSKd-r6fSvW-rKEDX7-SXm8Dd-FQaQZS-FMQpgA-rKEDAW-t3Wy1S-tXCpWW-RJrxpd-RJrynL-T1YNFR-RJrwBb-tXCq7W
+         https://www.flickr.com/photos/visioninvisible/16333723228/in/photolist-qTmARJ-Ff4NFg-zaLXap-KyxXVS-JKiDLy-HFpFqs-HHRQuV-zaM9t6-Jna8gS-23qsKKv-DGXehB-DNTzL9-QygHbw-23pGCcm-Ku4cD5-Kdn9cy-KHW512-JMvi1T-JeNVKc-FYxTx9-HHSfGH-NEmowH-KssfxR-21DiBSM-BKkUjC-x3HjFG-RQoMJo-LQwy6Z-JMo9iC-LMuRNA-Lp4tfq-K8fgDY-rW7HQT-MK9bMy-MC7Qkm-VpKDZk-yiZMtT-21NQQCF-uZ2dWe-KTBDci-LMvDyJ-JGWWZu-KB4hHa-JMoeY5-LQvX1t-Lp4jmo-LQwq6k-KTnPeS-D79KG3-GqMpWD

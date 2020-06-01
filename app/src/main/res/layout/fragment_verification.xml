@@ -6,12 +6,26 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_marginTop="20dp"
+        android:id="@+id/Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_heading"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_below="@id/Heading"
+        android:layout_marginTop="10dp"
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/verify_text"
-        android:gravity="center">
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="italic">
     </TextView>
 
     <TextView
@@ -19,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/verify_contacts"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:textStyle="bold"
         android:layout_below="@id/text1">
     </TextView>

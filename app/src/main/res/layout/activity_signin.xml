@@ -73,7 +73,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="@string/text_login">
+            android:background="@color/buttonColor"
+            android:textColor="@color/whiteText"
+            android:textStyle="bold"
+            android:text="@string/text_login"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp">
         </androidx.appcompat.widget.AppCompatButton>
 
         <!--register link-->
