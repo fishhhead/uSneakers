@@ -72,3 +72,12 @@ Fixed
 
 Changed
 *Home page from constrained layout to scroll view layout
+
+2020-06-03
+Added
+*My Account page now retrieves user's detail from sqlite db
+
+Fixed
+*sign in passes user email from activity to fragment
+
+Changed
