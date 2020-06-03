@@ -27,6 +27,7 @@
     <string name="error_password_not_match">Password does not matches</string>
     <string name="error_valid_email_password">Wrong Email or Password</string>
     <string name="success_message">Registration Successful</string>
+    <string name="success_login_message">You have successfully login as: </string>
 
     <!--Facebook Login strings-->
     <string name="facebook_app_id">527891928090750</string>

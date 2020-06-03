@@ -26,8 +26,8 @@ public class HomeFragment extends Fragment {
         viewPager = view.findViewById(R.id.view_pager);
         viewPager.setAdapter(new ViewPagerAdapter(getChildFragmentManager()));
 
-        TabLayout tableLayout = view.findViewById(R.id.tab_layout);
-        tableLayout.setupWithViewPager(viewPager);
+        TabLayout tabLayout = view.findViewById(R.id.tab_layout);
+        tabLayout.setupWithViewPager(viewPager);
 
         return view;
     }

@@ -53,8 +53,7 @@ public class googleMapFragment extends Fragment implements OnMapReadyCallback {
         map = googleMap;
 
         LatLng verifyCentre = new LatLng(-37.8473457, 145.079881);
-        googleMap.addMarker(new MarkerOptions().position(verifyCentre)
-                .title("Verification Centre"));
+        googleMap.addMarker(new MarkerOptions().position(verifyCentre).title("Verification Centre"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(verifyCentre));
     }
 }

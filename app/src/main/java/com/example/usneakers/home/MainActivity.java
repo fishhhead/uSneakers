@@ -1,5 +1,6 @@
 package com.example.usneakers.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -7,10 +8,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.example.usneakers.account.MyAccountFragment;
+import com.example.usneakers.MyAccountFragment;
 import com.example.usneakers.R;
-import com.example.usneakers.verification.VerificationFragment;
 import com.example.usneakers.catalogue.CatalogueFragment;
+import com.example.usneakers.verification.VerificationFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +19,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent i = getIntent();
+        String a = i.getStringExtra("userEmail");
+
+        Bundle bundle = new Bundle();
+        MyAccountFragment fragment = new MyAccountFragment();
+        bundle.putString("userEmail", a);
+        fragment.setArguments(bundle);
+
 
         //create bottom navigation view
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
@@ -53,6 +63,4 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
     };
-
-
 }

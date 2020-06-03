@@ -10,7 +10,6 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.widget.NestedScrollView;
 
-import com.example.usneakers.account.User;
 import com.example.usneakers.home.MainActivity;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -154,8 +153,10 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         if(databaseHelper.checkUser(et_Email.getText().toString().trim(), et_Pass.getText().toString().trim())){
+
+
             Intent intent = new Intent(activity, MainActivity.class);
-            intent.putExtra("Email", et_Email.getText().toString().trim());
+            intent.putExtra("userEmail", et_Email.getText().toString().trim());
             emptyInputEdittext();
             startActivity(intent);
         } else {

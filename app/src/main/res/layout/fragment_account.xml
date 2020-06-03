@@ -3,10 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/userEmailtv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="my account" />
+
+    <TextView
+        android:id="@+id/userNametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/userEmailtv"/>
+
 </RelativeLayout>

@@ -6,8 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.usneakers.account.User;
-
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
@@ -27,7 +25,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private String DROP_USER_TABLE = "DROP TABLE IF EXISTS " + TABLE_USER;
 
-    DatabaseHelper(Context context){
+    public DatabaseHelper(Context context){
         super(context,DATABASE_NAME, null, DATABASE_VERSION);
     }
 
@@ -40,6 +38,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(DROP_USER_TABLE);
         onCreate(db);
+    }
+
+    /*get user account info by their email*/
+    public User getUser(String email){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        String sql = "SELECT * FROM " + TABLE_USER + " WHERE " + COLUMN_USER_EMAIL + " LIKE '" + email + "'";
+        //String sql = "SELECT * FROM " + TABLE_USER + " WHERE " + COLUMN_USER_EMAIL + " = " + email;
+
+        Cursor cursor = db.rawQuery(sql, null);
+
+        User user = new User();
+
+        if (cursor.moveToFirst()) {
+            user.setId(Integer.parseInt(cursor.getString(cursor.getColumnIndex(COLUMN_USER_ID))));
+            user.setName(cursor.getString(cursor.getColumnIndex(COLUMN_USER_NAME)));;
+            user.setEmail(cursor.getString(cursor.getColumnIndex(COLUMN_USER_EMAIL)));
+        }
+
+        return user;
     }
 
     /*add user records in sqlite db*/
