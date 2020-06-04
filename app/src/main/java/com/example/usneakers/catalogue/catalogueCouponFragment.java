@@ -24,6 +24,8 @@ public class catalogueCouponFragment extends Fragment {
     public catalogueCouponFragment() {
         // Required empty public constructor
     }
+
+    /*initial fields for variable and views*/
     TextView SneakerName;
     ImageView SneakerPic;
     View view;
@@ -39,6 +41,7 @@ public class catalogueCouponFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_catalogue_coupon, container, false);
 
+        /*receive passed variables from Catalogue Fragment*/
         final Bundle bundle = this.getArguments();
 
         if(bundle != null) {
@@ -50,6 +53,7 @@ public class catalogueCouponFragment extends Fragment {
             Toast.makeText(getContext(), resultImg + resultName, Toast.LENGTH_LONG).show();
         }
 
+        /*initial views*/
         SneakerName = view.findViewById(R.id.SneakerName);
         SneakerName.setText(resultName);
         SneakerPic = view.findViewById(R.id.SneakerPic);
@@ -60,8 +64,7 @@ public class catalogueCouponFragment extends Fragment {
         button = view.findViewById(R.id.couponButton);
         coupon = view.findViewById(R.id.coupon);
 
-
-
+        /*button click that generates 'coupon' */
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

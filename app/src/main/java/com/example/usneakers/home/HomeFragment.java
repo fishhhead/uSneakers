@@ -22,6 +22,7 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
+        /*initial viewpager and tablayout for displaying two fragments: Intro and Gallery*/
         view = inflater.inflate(R.layout.fragment_home, container, false);
         viewPager = view.findViewById(R.id.view_pager);
         viewPager.setAdapter(new ViewPagerAdapter(getChildFragmentManager()));

@@ -10,12 +10,14 @@ import android.widget.EditText;
 
 import com.google.android.material.textfield.TextInputLayout;
 
+/*check for user inputs*/
 public class InputValidation {
     private Context context;
     InputValidation(Context context){
         this.context = context;
     }
 
+    /*check if edit text filled*/
     boolean isInputEditTextFilled(EditText editText, TextInputLayout textInputLayout, String message){
         String value = editText.getText().toString().trim();
         if(value.isEmpty()){
@@ -28,6 +30,7 @@ public class InputValidation {
         return true;
     }
 
+    /*check if edit texts matches*/
     boolean isInputEditTextMatches(EditText editText, EditText editText2, TextInputLayout textInputLayout, String message){
         String value1 = editText2.getText().toString().trim();
         String value2 = editText2.getText().toString().trim();
@@ -41,6 +44,7 @@ public class InputValidation {
         return true;
     }
 
+    /*check for user email inuputs*/
     boolean isInputEditTextEmail(EditText editText, TextInputLayout textInputLayout, String message){
         String value = editText.getText().toString().trim();
         if(value.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(value).matches()){
@@ -53,6 +57,7 @@ public class InputValidation {
         return true;
     }
 
+    /*hide key board*/
     private void hideKeyboardFrom(View view){
         InputMethodManager imm = (InputMethodManager) context.getSystemService(Activity.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(view.getWindowToken(), WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);

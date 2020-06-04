@@ -29,12 +29,14 @@ public class CatalogueFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_catalogue, container, false);
 
+        /*initial recycler view*/
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
 
         final LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(layoutManager);
 
+        /*iterate though item array list to retrieve data*/
         ArrayList data = new ArrayList<catalogueItems>();
         for (int i = 0; i < catalogueData.textArray.length; i++){
             data.add(
@@ -46,12 +48,14 @@ public class CatalogueFragment extends Fragment {
         }
 
 
+        /*initial list adapter*/
         mListadapter = new ListAdapter(data);
         mRecyclerView.setAdapter(mListadapter);
 
         return view;
     }
 
+    /*initial list adapter*/
     public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
 
         private ArrayList<catalogueItems> dataList;
@@ -61,6 +65,7 @@ public class CatalogueFragment extends Fragment {
             this.dataList = data;
         }
 
+        /*initial view holders*/
         public class ViewHolder extends RecyclerView.ViewHolder
         {
             ImageView imaV;
@@ -84,11 +89,13 @@ public class CatalogueFragment extends Fragment {
             return viewHolder;
         }
 
+        /*bind view holder*/
         @Override
         public void onBindViewHolder(@NonNull ListAdapter.ViewHolder holder, final int position) {
             holder.imaV.setImageResource(dataList.get(position).getImageResource());
             holder.textView.setText(dataList.get(position).getText());
 
+            /*button click to pass Catalogue data to coupon fragment*/
             holder.itemView.setOnClickListener(new View.OnClickListener()
             {
                 @Override
@@ -109,6 +116,7 @@ public class CatalogueFragment extends Fragment {
             });
         }
 
+        /*get the total length from datalist*/
         @Override
         public int getItemCount() {
             return dataList.size();

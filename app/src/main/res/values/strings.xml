@@ -19,6 +19,7 @@
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_newname">New Name</string>
     <string name="error_message_name">Enter Full Name</string>
     <string name="error_message_email">Enter Valid Email</string>
     <string name="error_message_age">Enter age</string>
@@ -28,6 +29,7 @@
     <string name="error_valid_email_password">Wrong Email or Password</string>
     <string name="success_message">Registration Successful</string>
     <string name="success_login_message">You have successfully login as: </string>
+    <string name="success_update_user_name">You have successfully updated your name</string>
 
     <!--Facebook Login strings-->
     <string name="facebook_app_id">527891928090750</string>
@@ -62,4 +64,10 @@
 
     <!--coupon button-->
     <string name="coupon_button">Generate your one time coupon</string>
+
+    <!--Account -->
+    <string name="account_heading">You can update your personal detail here!</string>
+    <string name="update_button">Update</string>
+    <string name="logout">Log out</string>
+
 </resources>

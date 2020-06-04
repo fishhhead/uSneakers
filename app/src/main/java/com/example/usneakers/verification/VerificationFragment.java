@@ -20,6 +20,7 @@ public class VerificationFragment extends Fragment  {
 
         view =  inflater.inflate(R.layout.fragment_verification, container, false);
 
+        /*initial Google Map API*/
         googleMapFragment supportMapFragment = new googleMapFragment();
         FragmentTransaction fm = getChildFragmentManager().beginTransaction();
         fm.replace(R.id.map_fragment, supportMapFragment).commit();

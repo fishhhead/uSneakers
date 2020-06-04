@@ -19,6 +19,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class googleMapFragment extends Fragment implements OnMapReadyCallback {
 
+    /*initial views*/
     View view;
     GoogleMap map;
     MapView mapView;
@@ -39,6 +40,7 @@ public class googleMapFragment extends Fragment implements OnMapReadyCallback {
     public void onViewCreated(@NonNull View view, @NonNull Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        /*bind google map to view*/
         mapView = view.findViewById(R.id.mapsView);
         if(mapView != null){
             mapView.onCreate(null);
@@ -47,6 +49,7 @@ public class googleMapFragment extends Fragment implements OnMapReadyCallback {
         }
     }
 
+    /*when maps created, set up a location on it*/
     @Override
     public void onMapReady(GoogleMap googleMap) {
         MapsInitializer.initialize(getContext());

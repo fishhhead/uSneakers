@@ -7,6 +7,7 @@
     tools:context=".catalogue.catalogueCouponFragment"
     android:background="@color/whiteText">
 
+    <!--back to previous button-->
     <ImageButton
         android:id="@+id/Back"
         android:layout_width="45dp"
@@ -15,6 +16,7 @@
         android:src="@drawable/ic_arrow_back_black_24dp">
     </ImageButton>
 
+    <!--current selected sneaker picture-->
     <ImageView
         android:id="@+id/SneakerPic"
         android:layout_width="200dp"
@@ -23,6 +25,7 @@
         android:layout_marginTop="40dp">
     </ImageView>
 
+    <!--current selected sneaker name-->
     <TextView
         android:id="@+id/SneakerName"
         android:layout_width="wrap_content"
@@ -33,6 +36,7 @@
         android:textStyle="bold">
     </TextView>
 
+    <!--button generate coupon-->
     <Button
         android:id="@+id/couponButton"
         android:layout_width="match_parent"
@@ -46,6 +50,7 @@
         android:textColor="@color/whiteText">
     </Button>
 
+    <!--coupon code-->
     <TextView
         android:id="@+id/coupon"
         android:layout_width="wrap_content"

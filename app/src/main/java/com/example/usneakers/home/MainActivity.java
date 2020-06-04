@@ -20,9 +20,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*receive user email from Sign in activity*/
         Intent i = getIntent();
         String a = i.getStringExtra("userEmail");
 
+        /*pass user email to my account fragment*/
         Bundle bundle = new Bundle();
         MyAccountFragment fragment = new MyAccountFragment();
         bundle.putString("userEmail", a);
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
     }
 
+    /*bottom navigation listener with switch that navigates to different fragments*/
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override

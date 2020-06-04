@@ -99,7 +99,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp" />
+            android:layout_marginBottom="10dp" />
+
+        <!--Facebook my account page error-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Facebook Users aren't able to view the My account page)" />
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

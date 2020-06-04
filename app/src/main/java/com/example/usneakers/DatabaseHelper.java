@@ -45,7 +45,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         String sql = "SELECT * FROM " + TABLE_USER + " WHERE " + COLUMN_USER_EMAIL + " LIKE '" + email + "'";
-        //String sql = "SELECT * FROM " + TABLE_USER + " WHERE " + COLUMN_USER_EMAIL + " = " + email;
 
         Cursor cursor = db.rawQuery(sql, null);
 
@@ -56,7 +55,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             user.setName(cursor.getString(cursor.getColumnIndex(COLUMN_USER_NAME)));;
             user.setEmail(cursor.getString(cursor.getColumnIndex(COLUMN_USER_EMAIL)));
         }
+        return user;
+    }
 
+    /*update user name by their email*/
+    public User upDateUserName(String name, String email){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        String sql = "UPDATE " + TABLE_USER + " SET " + COLUMN_USER_NAME + " = ' " + name + " ' " + " WHERE " + COLUMN_USER_EMAIL + " LIKE '" + email + "'";
+
+        Cursor cursor = db.rawQuery(sql, null);
+
+        User user = new User();
+
+        if (cursor.moveToFirst()) {
+            user.setId(Integer.parseInt(cursor.getString(cursor.getColumnIndex(COLUMN_USER_ID))));
+            user.setName(cursor.getString(cursor.getColumnIndex(COLUMN_USER_NAME)));;
+            user.setEmail(cursor.getString(cursor.getColumnIndex(COLUMN_USER_EMAIL)));
+        }
         return user;
     }
 

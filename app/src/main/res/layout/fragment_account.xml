@@ -3,17 +3,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/userEmailtv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="my account" />
-
+    <!--Display signed in user's name-->
     <TextView
         android:id="@+id/userNametv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         android:text="TextView"
-        android:layout_below="@+id/userEmailtv"/>
+        android:textColor="#3972C1"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <!--display signed in user's email-->
+    <TextView
+        android:id="@+id/userEmailtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/userNametv"
+        android:text="my account"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#3972C1"/>
+
+    <!--account update heading-->
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userEmailtv"
+        android:text="@string/account_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <!--new name input layout-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/up_name_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/Heading">
+
+        <EditText
+            android:id="@+id/up_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_newname"
+            android:maxLines="1">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--update button-->
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="@string/update_button"
+        android:layout_below="@id/up_name_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/buttonColor"
+        android:textColor="@color/whiteText"
+        android:textStyle="bold" />
+
+    <!--logout button-->
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="@string/logout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/update"
+        android:layout_marginTop="200dp"
+        android:background="@color/buttonColor"
+        android:textColor="@color/whiteText"
+        android:textStyle="bold"/>
 
 </RelativeLayout>
